@@ -31,6 +31,10 @@ echo -e "${LCYAN}Pre2. Make sure enable debug mode for device"
 read -p "Pres Enter to continue..."
 echo
 
+echo -e "${LCYAN}Pre3. Install dependencies${NC}"
+npm i
+echo
+
 # stay connect via USB
 echo -e "${YELLOW}1. Please connect device with PC/Laptop via USB. Press Enter to continue${NC}"
 read -p ""
