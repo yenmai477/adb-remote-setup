@@ -10,16 +10,7 @@ LCYAN='\033[1;36m'
 NC='\033[0m' # No Color
 
 # --------------------------------------
-# Get ChromecastIP from Zerotier
-# --------------------------------------
-
-# Run NodeJS to file chromecase IP
-chromecastIP=$(node index)
-echo -e "${GREEN}Found Chromecast IP in network: ${chromecastIP}"
-echo
-
-# --------------------------------------
-# Active debug mode for Chromecast
+# Pre requirements
 # --------------------------------------
 
 # Enable Developer mode for Device
@@ -34,6 +25,19 @@ echo
 echo -e "${LCYAN}Pre3. Install dependencies${NC}"
 npm i
 echo
+
+# --------------------------------------
+# Get ChromecastIP from Zerotier
+# --------------------------------------
+
+# Run NodeJS to file chromecase IP
+chromecastIP=$(node index)
+echo -e "${GREEN}Found Chromecast IP in network: ${chromecastIP}"
+echo
+
+# --------------------------------------
+# Active debug mode for Chromecast
+# --------------------------------------
 
 # stay connect via USB
 echo -e "${YELLOW}1. Please connect device with PC/Laptop via USB. Press Enter to continue${NC}"
