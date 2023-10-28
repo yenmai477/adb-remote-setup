@@ -31,6 +31,7 @@ echo
 # --------------------------------------
 
 # Run NodeJS to file chromecase IP
+echo -e "${YELLOW}0. Finding device IP...${NC}"
 chromecastIP=$(node index)
 echo -e "${GREEN}Found Chromecast IP in network: ${chromecastIP}"
 echo
